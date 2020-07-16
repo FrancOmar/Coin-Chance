@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.root.coin_change.Main2Activity">
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/bienve"
+        android:text="Hola Mundo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="#fa0303"
+            android:text="Ingrese un N° de monedas: "/>
+        <EditText
+            android:id="@+id/numon"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Ingrese un dato"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pantalla"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#04ecf9"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/cambio"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="#323f9f"
+            android:text="Cambio"
+            android:onClick="cambio"/>
+        <Button
+            android:id="@+id/vol"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Volver"
+            android:onClick="volver"/>
+    </LinearLayout>
+
+</LinearLayout>
